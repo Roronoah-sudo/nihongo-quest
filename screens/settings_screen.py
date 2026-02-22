@@ -141,15 +141,17 @@ class _OptionSelector(Entity):
 
         # Left arrow
         self.left_btn = Button(
-            text='-',
+            text='',
             parent=self,
             scale=(0.03, 0.035),
             position=(0.06, 0),
             color=ACCENT_RED,
             highlight_color=ACCENT_RED_LIGHT,
-            text_color=ACCENT_GOLD,
             on_click=self._prev,
         )
+        self.left_label = Text(text='<--', parent=self, font_size=12,
+                               color=ACCENT_GOLD, origin=(0, 0),
+                               position=(0.06, 0))
 
         # Value display
         self.value_text = Text(
@@ -163,15 +165,17 @@ class _OptionSelector(Entity):
 
         # Right arrow
         self.right_btn = Button(
-            text='+',
+            text='',
             parent=self,
             scale=(0.03, 0.035),
             position=(0.26, 0),
             color=ACCENT_RED,
             highlight_color=ACCENT_RED_LIGHT,
-            text_color=ACCENT_GOLD,
             on_click=self._next,
         )
+        self.right_label = Text(text='-->', parent=self, font_size=12,
+                                color=ACCENT_GOLD, origin=(0, 0),
+                                position=(0.26, 0))
 
     def _prev(self):
         self._index = (self._index - 1) % len(self._options)
