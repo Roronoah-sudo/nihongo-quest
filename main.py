@@ -29,17 +29,17 @@ if _PROJECT_ROOT not in sys.path:
 # ---------------------------------------------------------------------------
 # Configuration & core imports (pure Python — no GPU needed yet)
 # ---------------------------------------------------------------------------
-from nihongo_quest.config import (
+from config import (
     WINDOW_WIDTH, WINDOW_HEIGHT, WINDOW_TITLE, GAME_VERSION,
     FULLSCREEN_DEFAULT, FPS_CAP, VSYNC,
     SAVE_BASE_DIR, LOG_DIR, MAX_SAVE_SLOTS, MONUMENTS,
 )
-from nihongo_quest.core.save_system import (
+from core.save_system import (
     save_game, load_game, delete_save, get_all_saves,
     does_save_exist, create_new_save,
 )
-from nihongo_quest.core.game_manager import GameManager, GameState
-from nihongo_quest.core.progression import ProgressionTracker
+from core.game_manager import GameManager, GameState
+from core.progression import ProgressionTracker
 
 # ---------------------------------------------------------------------------
 # Logging setup

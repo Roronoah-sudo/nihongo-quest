@@ -25,14 +25,9 @@ import sys
 import os
 
 # Resolve imports for both package and standalone execution
-try:
-    from nihongo_quest.entities.player import PlayerCharacter
-    from nihongo_quest.entities.monument import Monument, MONUMENT_INFO
-    from nihongo_quest.entities.npc import NPC
-except ImportError:
-    sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..'))
-    from entities.player import PlayerCharacter
-    from entities.monument import Monument, MONUMENT_INFO
+from entities.player import PlayerCharacter
+from entities.monument import Monument, MONUMENT_INFO
+from entities.npc import NPC
     from entities.npc import NPC
 
 # Try to import shared UI components; fall back to local constants
@@ -806,7 +801,7 @@ class Overworld:
     def _launch_lesson_select(self, monument_id):
         """Launch the lesson select screen for the given monument."""
         try:
-            from nihongo_quest.screens.lesson_select import LessonSelectScreen
+            from screens.lesson_select import LessonSelectScreen
             lesson_key = MONUMENT_LESSON_KEYS.get(monument_id, 'hiragana')
             screen = LessonSelectScreen()
             screen.show(lesson_key, self._save_data)

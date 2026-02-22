@@ -18,32 +18,32 @@ Public interface
 
 from ursina import *
 
-from nihongo_quest.minigames.character_match import CharacterMatchMinigame
-from nihongo_quest.minigames.memory_cards import MemoryCardsMinigame
-from nihongo_quest.minigames.quiz_game import QuizMinigame
-from nihongo_quest.minigames.typing_challenge import TypingChallengeMinigame
-from nihongo_quest.minigames.sentence_builder import SentenceBuilderMinigame
-from nihongo_quest.minigames.listening_game import ListeningMinigame
+from minigames.character_match import CharacterMatchMinigame
+from minigames.memory_cards import MemoryCardsMinigame
+from minigames.quiz_game import QuizMinigame
+from minigames.typing_challenge import TypingChallengeMinigame
+from minigames.sentence_builder import SentenceBuilderMinigame
+from minigames.listening_game import ListeningMinigame
 
-from nihongo_quest.content.hiragana import (
+from content.hiragana import (
     HIRAGANA_BASIC, HIRAGANA_DAKUTEN, HIRAGANA_COMBOS, HIRAGANA_LESSONS,
     HIRAGANA_HANDAKUTEN,
 )
-from nihongo_quest.content.katakana import (
+from content.katakana import (
     KATAKANA_BASIC, KATAKANA_DAKUTEN, KATAKANA_HANDAKUTEN,
     KATAKANA_COMBOS, KATAKANA_LESSONS,
 )
-from nihongo_quest.content.vocabulary import (
+from content.vocabulary import (
     GREETINGS, NUMBERS, COMMON_NOUNS, COMMON_VERBS, COMMON_ADJECTIVES,
     JLPT_N5_VOCAB, VOCABULARY_LESSONS,
 )
-from nihongo_quest.content.grammar import (
+from content.grammar import (
     BASIC_GRAMMAR, INTERMEDIATE_GRAMMAR, ADVANCED_GRAMMAR,
     VERB_CONJUGATION, GRAMMAR_LESSONS,
 )
 
 try:
-    from nihongo_quest.content.kanji import KANJI_N5, KANJI_INTERMEDIATE, KANJI_LESSONS
+    from content.kanji import KANJI_N5, KANJI_INTERMEDIATE, KANJI_LESSONS
     HAS_KANJI = True
 except ImportError:
     HAS_KANJI = False

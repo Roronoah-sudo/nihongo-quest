@@ -15,7 +15,7 @@ import time
 from enum import Enum, auto
 from typing import Any, Callable, Dict, List, Optional, Set
 
-from nihongo_quest.config import (
+from config import (
     MONUMENTS,
     TOTAL_MONUMENTS,
     DIFFICULTY_SETTINGS,

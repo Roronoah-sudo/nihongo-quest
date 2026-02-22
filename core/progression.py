@@ -15,7 +15,7 @@ import logging
 from enum import IntEnum
 from typing import Any, Dict, List, Optional, Tuple
 
-from nihongo_quest.config import (
+from config import (
     BASE_XP_PER_LEVEL,
     XP_GROWTH_FACTOR,
     MAX_PLAYER_LEVEL,

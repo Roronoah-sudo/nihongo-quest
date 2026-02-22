@@ -15,7 +15,7 @@ from datetime import datetime, timezone
 from typing import Any, Dict, List, Optional
 
 # Use project config for paths and limits
-from nihongo_quest.config import SAVE_DIR, MAX_SAVE_SLOTS, DEFAULT_DIFFICULTY
+from config import SAVE_DIR, MAX_SAVE_SLOTS, DEFAULT_DIFFICULTY
 
 logger = logging.getLogger(__name__)
 
