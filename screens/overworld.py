@@ -28,7 +28,6 @@ import os
 from entities.player import PlayerCharacter
 from entities.monument import Monument, MONUMENT_INFO
 from entities.npc import NPC
-    from entities.npc import NPC
 
 # Try to import shared UI components; fall back to local constants
 try:
