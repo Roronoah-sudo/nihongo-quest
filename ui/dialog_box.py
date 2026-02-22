@@ -245,8 +245,8 @@ class DialogBox(Entity):
             origin=(-0.5, 0.5),
             position=(text_x, text_y),
             z=-0.01,
-            wordwrap=55,
         )
+        self.dialog_text.wordwrap = 55
 
         # Furigana line (rendered above the main text when needed)
         self.furigana_entity = FuriganaText(

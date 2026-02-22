@@ -882,8 +882,8 @@ class Overworld:
             scale=1.2,
             color=TEXT_WHITE,
             z=-0.2,
-            wordwrap=60,
         )
+        dialog_text.wordwrap = 60
         self._info_panel_entities.append(dialog_text)
 
         # "Next" / "Close" button

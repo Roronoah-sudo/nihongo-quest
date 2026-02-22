@@ -144,7 +144,11 @@ class BaseMinigame(ABC):
             color=COLOR_TEXT,
         )
         defaults.update(kwargs)
+        # Extract wordwrap to set after creation (avoids Ursina raw_text bug)
+        ww = defaults.pop('wordwrap', None)
         t = Text(text=text, **defaults)
+        if ww is not None:
+            t.wordwrap = ww
         self.entities.append(t)
         self._ui_entities.append(t)
         return t
