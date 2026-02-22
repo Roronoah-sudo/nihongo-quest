@@ -961,7 +961,7 @@ class LessonSelectScreen:
         # Back button
         back_btn = Button(
             parent=camera.ui,
-            text='◀ Back',
+            text='Back',
             scale=(0.12, 0.045),
             position=(-0.5, 0.435),
             color=COLOR_BUTTON,
