@@ -148,6 +148,8 @@ class BaseMinigame(ABC):
         ww = defaults.pop('wordwrap', None)
         t = Text(text=text, **defaults)
         if ww is not None:
+            if not hasattr(t, 'raw_text'):
+                t.raw_text = ''
             t.wordwrap = ww
         self.entities.append(t)
         self._ui_entities.append(t)

@@ -883,6 +883,8 @@ class Overworld:
             color=TEXT_WHITE,
             z=-0.2,
         )
+        if not hasattr(dialog_text, 'raw_text'):
+            dialog_text.raw_text = ''
         dialog_text.wordwrap = 60
         self._info_panel_entities.append(dialog_text)
 

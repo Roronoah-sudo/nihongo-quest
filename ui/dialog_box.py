@@ -246,6 +246,8 @@ class DialogBox(Entity):
             position=(text_x, text_y),
             z=-0.01,
         )
+        if not hasattr(self.dialog_text, 'raw_text'):
+            self.dialog_text.raw_text = ''
         self.dialog_text.wordwrap = 55
 
         # Furigana line (rendered above the main text when needed)
