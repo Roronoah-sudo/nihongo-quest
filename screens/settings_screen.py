@@ -141,7 +141,7 @@ class _OptionSelector(Entity):
 
         # Left arrow
         self.left_btn = Button(
-            text='<',
+            text='◀',
             parent=self,
             scale=(0.03, 0.035),
             position=(0.06, 0),
@@ -163,7 +163,7 @@ class _OptionSelector(Entity):
 
         # Right arrow
         self.right_btn = Button(
-            text='>',
+            text='▶',
             parent=self,
             scale=(0.03, 0.035),
             position=(0.26, 0),
